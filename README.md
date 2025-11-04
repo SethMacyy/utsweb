@@ -1,8 +1,10 @@
-README - Tugas UTS Pemrograman Web 1 
+# README - Tugas UTS Pemrograman Web 1 
 
-Nama : SURYA PUTRRA DARMA JAYA
-NIM : 312410405
-Kelas : TI.24.A3
+## Nama : SURYA PUTRRA DARMA JAYA
+
+## NIM : 312410405
+
+## Kelas : TI.24.A3
 ----------------------------------------------------
 Struktur folder: (sesuai soal)
 - index.html (login)
