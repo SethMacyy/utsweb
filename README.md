@@ -1,4 +1,4 @@
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/19fc74b9-9b09-421b-8434-cf87526ba0f1" /><img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/6cc036f2-91f0-430a-9e42-c2a74be1c365" />README - Tugas UTS Pemrograman Web 1 
+README - Tugas UTS Pemrograman Web 1 
 
 Nama : SURYA PUTRRA DARMA JAYA
 NIM : 312410405
