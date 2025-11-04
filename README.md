@@ -1,97 +1,141 @@
-📚 Toko Buku - Sistem Manajemen Toko Buku Online
+# 📚 Toko Buku - Sistem Manajemen Toko Buku Online
+
 Aplikasi web sederhana untuk mengelola toko buku dengan fitur login multi-role (Admin & User), manajemen katalog, pemesanan, tracking pengiriman, dan riwayat transaksi.
 
-Tampilkan Gambar
+![Toko Buku Banner](screenshots/01-login.png)
 
-🎯 Fitur Utama
-👤 Sistem Login & Role-Based Access
-Admin: Akses penuh ke manajemen stok/katalog
-User: Akses ke pemesanan, tracking, dan history transaksi
-Autentikasi menggunakan email & password
-Session management dengan sessionStorage
-🔐 Akun Default
-User
-Email: darma@gmail.com | Password: darma123
-Email: putra@gmail.com | Password: putra123
-Admin
-Email: surya@gmail.com | Password: surya123
-📸 Screenshot Aplikasi
-🔑 Halaman Login
-Tampilkan Gambar
-Halaman login dengan form email dan password. Mendukung login sebagai Admin atau User.
+## 🎯 Fitur Utama
 
-🏠 Dashboard
-<table> <tr> <td width="50%"> <img src="screenshots/02-dashboard-admin.png" alt="Admin Dashboard"/> </td> <td width="50%"> <img src="screenshots/03-dashboard-user.png" alt="User Dashboard"/> </td> </tr> <tr> <td align="center"><b>Admin Dashboard</b><br/>Menu: Informasi Stok/Katalog</td> <td align="center"><b>User Dashboard</b><br/>Menu: Pemesanan, Tracking, History</td> </tr> </table>
-Fitur Dashboard:
+### 👤 Sistem Login & Role-Based Access
+- **Admin**: Akses penuh ke manajemen stok/katalog
+- **User**: Akses ke pemesanan, tracking, dan history transaksi
+- Autentikasi menggunakan email & password
+- Session management dengan sessionStorage
 
-Greeting sesuai waktu (pagi/siang/sore/malam)
-Badge role (Admin/User)
-Statistik: Total koleksi buku, total users, stok tersisa
-Tampilan buku teratas dengan cover
-Menu navigasi berbasis role
-📦 Manajemen Stok (Admin Only)
-Tampilkan Gambar
-Admin dapat mengelola katalog buku: tambah, edit, dan hapus data buku.
+### 🔐 Akun Default
 
-Fitur:
+#### User
+- **Email**: `darma@gmail.com` | **Password**: `darma123`
+- **Email**: `putra@gmail.com` | **Password**: `putra123`
 
-Tabel katalog lengkap (Kode, Nama, Jenis, Edisi, Stok, Harga)
-Button "Tambah Item" untuk menambah buku baru
-Aksi Edit & Hapus untuk setiap item
-Data tersimpan in-memory (session)
-🛒 Pemesanan (User Only)
-Tampilkan Gambar
-Form pemesanan dengan keranjang belanja interaktif.
+#### Admin
+- **Email**: `surya@gmail.com` | **Password**: `surya123`
 
-Fitur:
+---
 
-Form data pemesan (auto-filled dari profil user)
-Dropdown pilih buku dari katalog
-Keranjang belanja dengan fitur:
-Tambah/kurang quantity (+/-)
-Hapus item
-Kalkulasi total otomatis
-Button "Place Order" untuk submit pesanan
-Generate Delivery Order (DO) otomatis
-📍 Tracking Pengiriman (User Only)
-Tampilkan Gambar
-Daftar DO milik user dan form pencarian DO.
+## 📸 Screenshot Aplikasi
 
-Tampilkan Gambar
-Detail tracking dengan timeline perjalanan paket dan tombol simulasi progress.
+### 🔑 Halaman Login
+![Login Page](screenshots/01-login.png)
+*Halaman login dengan form email dan password. Mendukung login sebagai Admin atau User.*
 
-Fitur:
+---
 
-Search bar untuk cari DO berdasarkan nomor
-List semua DO milik user yang sedang login
-Detail tracking menampilkan:
-Nama penerima
-Status pengiriman (Dalam Proses, Dalam Perjalanan, Selesai Antar)
-Info ekspedisi, tanggal kirim, nomor paket
-Total pembayaran
-Timeline perjalanan paket
-Simulate Progress: Tombol untuk demo update status (untuk testing)
-📜 History Transaksi (User Only)
-Tampilkan Gambar
-Riwayat transaksi lengkap dengan detail items yang dibeli.
+### 🏠 Dashboard
 
-Fitur:
+<table>
+  <tr>
+    <td width="50%">
+      <img src="screenshots/02-dashboard-admin.png" alt="Admin Dashboard"/>
+    </td>
+    <td width="50%">
+      <img src="screenshots/03-dashboard-user.png" alt="User Dashboard"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>Admin Dashboard</b><br/>Menu: Informasi Stok/Katalog</td>
+    <td align="center"><b>User Dashboard</b><br/>Menu: Pemesanan, Tracking, History</td>
+  </tr>
+</table>
 
-Daftar transaksi user (sorted terbaru)
-Detail per transaksi:
-Nomor DO
-Tanggal pemesanan
-Status (Dalam Proses, Selesai)
-Total pembayaran
-List items yang dibeli beserta quantity
-📚 Katalog Buku Default
-Kode Barang	Nama Buku	Jenis	Edisi	Stok	Harga
-ASIP4301	Pengantar Ilmu Komunikasi	Buku Ajar	2	548	Rp 180.000
-EKMA4002	Manajemen Keuangan	Buku Ajar	3	392	Rp 220.000
-EKMA4310	Kepemimpinan	Buku Ajar	1	278	Rp 150.000
-BIOL4211	Mikrobiologi Dasar	Buku Ajar	2	165	Rp 200.000
-PAUD4401	Perkembangan Anak Usia Dini	Buku Ajar	4	204	Rp 250.000
-🗂️ Struktur File
+**Fitur Dashboard:**
+- Greeting sesuai waktu (pagi/siang/sore/malam)
+- Badge role (Admin/User)
+- Statistik: Total koleksi buku, total users, stok tersisa
+- Tampilan buku teratas dengan cover
+- Menu navigasi berbasis role
+
+---
+
+### 📦 Manajemen Stok (Admin Only)
+![Stok Management](screenshots/04-stok.png)
+*Admin dapat mengelola katalog buku: tambah, edit, dan hapus data buku.*
+
+**Fitur:**
+- Tabel katalog lengkap (Kode, Nama, Jenis, Edisi, Stok, Harga)
+- Button "Tambah Item" untuk menambah buku baru
+- Aksi Edit & Hapus untuk setiap item
+- Data tersimpan in-memory (session)
+
+---
+
+### 🛒 Pemesanan (User Only)
+![Checkout](screenshots/05-checkout.png)
+*Form pemesanan dengan keranjang belanja interaktif.*
+
+**Fitur:**
+- Form data pemesan (auto-filled dari profil user)
+- Dropdown pilih buku dari katalog
+- Keranjang belanja dengan fitur:
+  - Tambah/kurang quantity (+/-)
+  - Hapus item
+  - Kalkulasi total otomatis
+- Button "Place Order" untuk submit pesanan
+- Generate Delivery Order (DO) otomatis
+
+---
+
+### 📍 Tracking Pengiriman (User Only)
+
+![Tracking List](screenshots/06-tracking.png)
+*Daftar DO milik user dan form pencarian DO.*
+
+![Tracking Detail](screenshots/07-tracking-detail.png)
+*Detail tracking dengan timeline perjalanan paket dan tombol simulasi progress.*
+
+**Fitur:**
+- Search bar untuk cari DO berdasarkan nomor
+- List semua DO milik user yang sedang login
+- Detail tracking menampilkan:
+  - Nama penerima
+  - Status pengiriman (Dalam Proses, Dalam Perjalanan, Selesai Antar)
+  - Info ekspedisi, tanggal kirim, nomor paket
+  - Total pembayaran
+  - Timeline perjalanan paket
+- **Simulate Progress**: Tombol untuk demo update status (untuk testing)
+
+---
+
+### 📜 History Transaksi (User Only)
+![History](screenshots/08-history.png)
+*Riwayat transaksi lengkap dengan detail items yang dibeli.*
+
+**Fitur:**
+- Daftar transaksi user (sorted terbaru)
+- Detail per transaksi:
+  - Nomor DO
+  - Tanggal pemesanan
+  - Status (Dalam Proses, Selesai)
+  - Total pembayaran
+  - List items yang dibeli beserta quantity
+
+---
+
+## 📚 Katalog Buku Default
+
+| Kode Barang | Nama Buku | Jenis | Edisi | Stok | Harga |
+|-------------|-----------|-------|-------|------|-------|
+| ASIP4301 | Pengantar Ilmu Komunikasi | Buku Ajar | 2 | 548 | Rp 180.000 |
+| EKMA4002 | Manajemen Keuangan | Buku Ajar | 3 | 392 | Rp 220.000 |
+| EKMA4310 | Kepemimpinan | Buku Ajar | 1 | 278 | Rp 150.000 |
+| BIOL4211 | Mikrobiologi Dasar | Buku Ajar | 2 | 165 | Rp 200.000 |
+| PAUD4401 | Perkembangan Anak Usia Dini | Buku Ajar | 4 | 204 | Rp 250.000 |
+
+---
+
+## 🗂️ Struktur File
+
+```
 toko-buku/
 ├── index.html          # Halaman login
 ├── dashboard.html      # Dashboard utama (Admin & User)
@@ -115,71 +159,98 @@ toko-buku/
     ├── 06-tracking.png
     ├── 07-tracking-detail.png
     └── 08-history.png
-🛠️ Teknologi
-HTML5 - Struktur halaman
-CSS3 - Styling dengan Bootstrap 5.3.2
-JavaScript (Vanilla) - Logic & interaktivitas
-SessionStorage - Penyimpanan data temporary (cart, orders, tracking)
-🚀 Cara Menggunakan
-1. Clone Repository
-bash
+```
+
+---
+
+## 🛠️ Teknologi
+
+- **HTML5** - Struktur halaman
+- **CSS3** - Styling dengan Bootstrap 5.3.2
+- **JavaScript (Vanilla)** - Logic & interaktivitas
+- **SessionStorage** - Penyimpanan data temporary (cart, orders, tracking)
+
+---
+
+## 🚀 Cara Menggunakan
+
+### 1. Clone Repository
+```bash
 git clone https://github.com/username/toko-buku.git
 cd toko-buku
-2. Buka dengan Browser
-Buka file index.html langsung di browser, atau
-Gunakan Live Server (recommended)
-bash
+```
+
+### 2. Buka dengan Browser
+- Buka file `index.html` langsung di browser, atau
+- Gunakan Live Server (recommended)
+
+```bash
 # Jika menggunakan VS Code Live Server
 # Klik kanan index.html → Open with Live Server
-3. Login
+```
+
+### 3. Login
 Gunakan salah satu akun berikut:
+- **Admin**: `surya@gmail.com` / `surya123`
+- **User**: `darma@gmail.com` / `darma123`
 
-Admin: surya@gmail.com / surya123
-User: darma@gmail.com / darma123
-4. Eksplorasi Fitur
-Sebagai Admin:
-Login dengan akun admin
-Klik menu "Informasi Stok / Katalog"
-Kelola buku: Tambah, Edit, atau Hapus
-Sebagai User:
-Login dengan akun user
-Pemesanan: Pilih buku → Tambah ke keranjang → Place Order
-Tracking: Lihat daftar DO Anda → Klik "Lihat" untuk detail
-History: Cek semua transaksi yang pernah dilakukan
-💡 Fitur Khusus
-🔢 Generate Delivery Order (DO)
-Format: YYYY + 6 digit timestamp terakhir
-Contoh: 2025053952
-2025 = tahun
-053952 = dari timestamp
-Otomatis tersimpan untuk tracking
-🔄 Simulasi Tracking
+### 4. Eksplorasi Fitur
+
+#### Sebagai Admin:
+1. Login dengan akun admin
+2. Klik menu "Informasi Stok / Katalog"
+3. Kelola buku: Tambah, Edit, atau Hapus
+
+#### Sebagai User:
+1. Login dengan akun user
+2. **Pemesanan**: Pilih buku → Tambah ke keranjang → Place Order
+3. **Tracking**: Lihat daftar DO Anda → Klik "Lihat" untuk detail
+4. **History**: Cek semua transaksi yang pernah dilakukan
+
+---
+
+## 💡 Fitur Khusus
+
+### 🔢 Generate Delivery Order (DO)
+- Format: `YYYY` + 6 digit timestamp terakhir
+- Contoh: `2025053952` 
+  - `2025` = tahun
+  - `053952` = dari timestamp
+- Otomatis tersimpan untuk tracking
+
+### 🔄 Simulasi Tracking
 Untuk demo purposes:
+1. Buka detail DO di halaman Tracking
+2. Klik tombol **"Simulate Progress"**
+3. Status akan update bertahap:
+   - Dalam Proses → Dalam Perjalanan → Selesai Antar
+4. Setiap klik menambah 1 step timeline
+5. Setelah 4+ step, status jadi "Selesai Antar"
 
-Buka detail DO di halaman Tracking
-Klik tombol "Simulate Progress"
-Status akan update bertahap:
-Dalam Proses → Dalam Perjalanan → Selesai Antar
-Setiap klik menambah 1 step timeline
-Setelah 4+ step, status jadi "Selesai Antar"
-💾 Data Persistence
-Cart: Tersimpan per session user
-Orders: Terpisah per email user
-Tracking: Shared untuk semua user
-Clear otomatis: Saat logout atau browser ditutup
-📝 Catatan Penting
-⚠️ Important Notes:
+### 💾 Data Persistence
+- **Cart**: Tersimpan per session user
+- **Orders**: Terpisah per email user
+- **Tracking**: Shared untuk semua user
+- **Clear otomatis**: Saat logout atau browser ditutup
 
-Data tersimpan di sessionStorage (hilang saat browser ditutup)
-Data tracking original di data.js di-merge dengan session data
-Role checking diterapkan di setiap halaman
-Logout akan menghapus semua session data
-Aplikasi ini untuk pembelajaran/demo, bukan production-ready
-🎨 Kustomisasi
-Menambah Buku Baru
-Edit file js/data.js, tambahkan ke array dataKatalogBuku:
+---
 
-javascript
+## 📝 Catatan Penting
+
+⚠️ **Important Notes:**
+- Data tersimpan di **sessionStorage** (hilang saat browser ditutup)
+- Data tracking original di `data.js` di-merge dengan session data
+- Role checking diterapkan di setiap halaman
+- Logout akan menghapus semua session data
+- Aplikasi ini untuk **pembelajaran/demo**, bukan production-ready
+
+---
+
+## 🎨 Kustomisasi
+
+### Menambah Buku Baru
+Edit file `js/data.js`, tambahkan ke array `dataKatalogBuku`:
+```javascript
 {
     kodeBarang: "BARU001",
     namaBarang: "Judul Buku Baru",
@@ -189,10 +260,11 @@ javascript
     harga: "Rp 150.000",
     cover: "img/cover_baru.jpg"
 }
-Menambah User/Admin
-Edit file js/data.js, tambahkan ke array dataPengguna:
+```
 
-javascript
+### Menambah User/Admin
+Edit file `js/data.js`, tambahkan ke array `dataPengguna`:
+```javascript
 {
     id: 4,
     nama: "Nama Baru",
@@ -200,40 +272,60 @@ javascript
     password: "password123",
     role: "User" // atau "Admin"
 }
-🐛 Troubleshooting
-Q: Tabel stok kosong?
-A: Pastikan file js/data.js ter-load dengan benar. Check browser console.
+```
 
-Q: Cart tidak muncul setelah refresh?
+---
+
+## 🐛 Troubleshooting
+
+**Q: Tabel stok kosong?**  
+A: Pastikan file `js/data.js` ter-load dengan benar. Check browser console.
+
+**Q: Cart tidak muncul setelah refresh?**  
 A: Ini normal. Cart tersimpan di session, hilang setelah reload halaman checkout.
 
-Q: DO tidak muncul di tracking?
+**Q: DO tidak muncul di tracking?**  
 A: Pastikan sudah Place Order dulu dari halaman Checkout.
 
-Q: Setelah logout, data transaksi hilang?
+**Q: Setelah logout, data transaksi hilang?**  
 A: Ya, karena menggunakan sessionStorage. Untuk produksi, gunakan database.
 
-📄 Lisensi
+---
+
+## 📄 Lisensi
+
 MIT License - Bebas digunakan untuk pembelajaran dan pengembangan.
 
-👨‍💻 Author
-Nama Anda
+---
 
-GitHub: @username
-Email: your.email@example.com
-🙏 Acknowledgments
-Bootstrap 5.3.2 untuk UI components
-Font: Inter (system fonts)
-Dibuat untuk tugas pembelajaran Pemrograman Web
-📞 Kontak & Support
+## 👨‍💻 Author
+
+**Nama Anda**
+- GitHub: [@username](https://github.com/username)
+- Email: your.email@example.com
+
+---
+
+## 🙏 Acknowledgments
+
+- Bootstrap 5.3.2 untuk UI components
+- Font: Inter (system fonts)
+- Dibuat untuk tugas pembelajaran Pemrograman Web
+
+---
+
+## 📞 Kontak & Support
+
 Jika ada pertanyaan atau menemukan bug:
+1. Buka [Issues](https://github.com/username/toko-buku/issues)
+2. Atau hubungi via email
 
-Buka Issues
-Atau hubungi via email
+---
+
 <div align="center">
-⭐ Star repo ini jika bermanfaat! ⭐
+
+**⭐ Star repo ini jika bermanfaat! ⭐**
 
 Made with ❤️ for learning purposes
 
 </div>
-
