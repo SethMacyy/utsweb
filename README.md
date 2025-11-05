@@ -1,18 +1,18 @@
-# 📚 Toko Buku - Sistem Manajemen Toko Buku Online
+# Toko Buku - Sistem Manajemen Toko Buku Online
 
 Aplikasi web sederhana untuk mengelola toko buku dengan fitur login multi-role (Admin & User), manajemen katalog, pemesanan, tracking pengiriman, dan riwayat transaksi.
 
 ![Toko Buku Banner](screenshots/01-login.png)
 
-## 🎯 Fitur Utama
+## Fitur Utama
 
-### 👤 Sistem Login & Role-Based Access
+### Sistem Login & Role-Based Access
 - **Admin**: Akses penuh ke manajemen stok/katalog
 - **User**: Akses ke pemesanan, tracking, dan history transaksi
 - Autentikasi menggunakan email & password
 - Session management dengan sessionStorage
 
-### 🔐 Akun Default
+### Akun Default
 
 #### User
 - **Email**: `darma@gmail.com` | **Password**: `darma123`
@@ -23,15 +23,15 @@ Aplikasi web sederhana untuk mengelola toko buku dengan fitur login multi-role (
 
 ---
 
-## 📸 Screenshot Aplikasi
+## Screenshot Aplikasi
 
-### 🔑 Halaman Login
+### Halaman Login
 ![Login Page](screenshots/01-login.png)
 *Halaman login dengan form email dan password. Mendukung login sebagai Admin atau User.*
 
 ---
 
-### 🏠 Dashboard
+### Dashboard
 
 <table>
   <tr>
@@ -57,7 +57,7 @@ Aplikasi web sederhana untuk mengelola toko buku dengan fitur login multi-role (
 
 ---
 
-### 📦 Manajemen Stok (Admin Only)
+### Manajemen Stok (Admin Only)
 ![Stok Management](screenshots/04-stok.png)
 *Admin dapat mengelola katalog buku: tambah, edit, dan hapus data buku.*
 
@@ -85,7 +85,7 @@ Aplikasi web sederhana untuk mengelola toko buku dengan fitur login multi-role (
 
 ---
 
-### 📍 Tracking Pengiriman (User Only)
+### Tracking Pengiriman (User Only)
 
 ![Tracking List](screenshots/06-tracking.png)
 *Daftar DO milik user dan form pencarian DO.*
@@ -106,7 +106,7 @@ Aplikasi web sederhana untuk mengelola toko buku dengan fitur login multi-role (
 
 ---
 
-### 📜 History Transaksi (User Only)
+### History Transaksi (User Only)
 ![History](screenshots/08-history.png)
 *Riwayat transaksi lengkap dengan detail items yang dibeli.*
 
@@ -121,7 +121,7 @@ Aplikasi web sederhana untuk mengelola toko buku dengan fitur login multi-role (
 
 ---
 
-## 📚 Katalog Buku Default
+## Katalog Buku Default
 
 | Kode Barang | Nama Buku | Jenis | Edisi | Stok | Harga |
 |-------------|-----------|-------|-------|------|-------|
